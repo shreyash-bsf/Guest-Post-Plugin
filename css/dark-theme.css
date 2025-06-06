@@ -1,0 +1,34 @@
+/**
+ * Guest Post Plugin Dark Theme
+ */
+.guest-post-form-dark {
+    background: #333;
+    color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.guest-post-form-dark label {
+    color: #f9f9f9;
+}
+
+.guest-post-form-dark input[type="text"],
+.guest-post-form-dark input[type="email"],
+.guest-post-form-dark textarea,
+.guest-post-form-dark select {
+    background: #444;
+    border: 1px solid #555;
+    color: #f9f9f9;
+}
+
+.guest-post-form-dark .submit-button {
+    background-color: #0073aa;
+    color: white;
+}
+
+.guest-post-form-dark .submit-button:hover {
+    background-color: #005177;
+}
+
+.guest-post-form-dark .description {
+    color: #ccc;
+}

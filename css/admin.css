@@ -1,0 +1,302 @@
+/**
+ * Guest Post Plugin Admin Styles
+ */
+.settings-tab {
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Focus styles for accessibility */
+:focus {
+  outline: 2px solid #2271b1;
+  outline-offset: 1px;
+}
+
+/* Skip link for keyboard navigation */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #fff;
+  padding: 8px;
+  z-index: 100000;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Tooltip styles */
+.tooltip-container {
+  display: inline-block;
+  position: relative;
+}
+
+/* Settings section styling */
+.settings-section {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  margin-bottom: 20px;
+  padding: 0;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.settings-section h3 {
+  border-bottom: 1px solid #eee;
+  margin: 0;
+  padding: 15px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #f9f9f9;
+  cursor: pointer;
+  position: relative;
+  word-break: break-word;
+}
+
+.settings-section h3:hover {
+  background-color: #f0f0f1;
+}
+
+.settings-section h3:after {
+  content: "\f140";
+  font: normal 20px/1 dashicons;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #72777c;
+  pointer-events: none;
+}
+
+.settings-section.closed h3:after {
+  content: "\f142";
+}
+
+.settings-section-content {
+  padding: 15px;
+}
+
+.settings-section.open .settings-section-content {
+  display: block;
+}
+
+.settings-section.closed .settings-section-content {
+  display: none;
+}
+
+/* Form elements */
+.form-table {
+  margin-top: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.form-table th {
+  padding-left: 0;
+  width: 200px;
+  vertical-align: top;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.form-table td {
+  padding-right: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  vertical-align: top;
+}
+
+.form-table input[type="text"],
+.form-table input[type="email"],
+.form-table input[type="number"],
+.form-table select,
+.form-table textarea {
+  min-height: 30px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #8c8f94;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-table textarea {
+  min-height: 100px;
+}
+
+.form-table input[type="text"]:focus,
+.form-table input[type="email"]:focus,
+.form-table input[type="number"]:focus,
+.form-table select:focus,
+.form-table textarea:focus {
+  border-color: #2271b1;
+  box-shadow: 0 0 0 1px #2271b1;
+}
+
+.form-table .description {
+  color: #666;
+  font-style: italic;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+/* Tab styling */
+.nav-tab-wrapper {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #c3c4c7;
+}
+
+.nav-tab {
+  float: left;
+  border: 1px solid #c3c4c7;
+  border-bottom: none;
+  margin-left: 0.5em;
+  margin-bottom: -1px;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 1.71428571;
+  font-weight: 600;
+  background: #f0f0f1;
+  color: #2c3338;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-tab:first-child {
+  margin-left: 0;
+}
+
+.nav-tab:hover,
+.nav-tab:focus {
+  background-color: #fff;
+  color: #1d2327;
+}
+
+.nav-tab-active,
+.nav-tab-active:focus,
+.nav-tab-active:focus:active,
+.nav-tab-active:hover {
+  border-bottom: 1px solid #f0f0f1;
+  background: #f0f0f1;
+  color: #000;
+}
+
+/* Dashboard widget styles */
+.guest-post-dashboard-widget .post-item {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.guest-post-dashboard-widget .post-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.guest-post-dashboard-widget .post-title {
+  font-weight: bold;
+  margin-bottom: 3px;
+  word-break: break-word;
+}
+
+.guest-post-dashboard-widget .post-meta {
+  color: #777;
+  font-size: 12px;
+  word-break: break-word;
+}
+
+.guest-post-dashboard-widget .post-actions {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.guest-post-dashboard-widget .post-actions a {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.guest-post-dashboard-widget .no-posts {
+  font-style: italic;
+  color: #777;
+}
+
+/* High contrast mode support */
+@media (forced-colors: active) {
+  .settings-section {
+    border: 1px solid CanvasText;
+  }
+  
+  .settings-section h3:after {
+    forced-color-adjust: none;
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 782px) {
+  .form-table, 
+  .form-table tbody, 
+  .form-table tr, 
+  .form-table th, 
+  .form-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .form-table th {
+    padding-bottom: 5px;
+    padding-top: 10px;
+  }
+  
+  .form-table td {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+  }
+  
+  .form-table input[type="text"],
+  .form-table input[type="email"],
+  .form-table input[type="number"],
+  .form-table select,
+  .form-table textarea {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+  }
+  
+  .nav-tab-wrapper {
+    padding: 0;
+  }
+  
+  .nav-tab {
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-tab-wrapper {
+    border-bottom: 0;
+  }
+  
+  .nav-tab {
+    margin-left: 0;
+    margin-right: 0.5em;
+    border-bottom: 1px solid #c3c4c7;
+    margin-bottom: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .settings-section h3 {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://suredash.local",
+  "integrationFolder": "tests/cypress/integration",
+  "fixturesFolder": "tests/cypress/fixtures",
+  "pluginsFile": "tests/cypress/plugins/index.js",
+  "supportFile": "tests/cypress/support/index.js",
+  "video": false
+}

@@ -1,0 +1,98 @@
+/* Dark mode styles for TinyMCE editor */
+.guest-post-form-dark .mce-container,
+.guest-post-form-dark .mce-container *,
+.guest-post-form-dark .mce-widget,
+.guest-post-form-dark .mce-widget *,
+.guest-post-form-dark .mce-reset {
+  background: #1f2937 !important;
+  color: #f9f9f9 !important;
+  border-color: #4b5563 !important;
+}
+
+.guest-post-form-dark .mce-panel {
+  border-color: #4b5563 !important;
+  background-color: #1f2937 !important;
+  border-radius: 0.5rem !important;
+  overflow: hidden;
+}
+
+.guest-post-form-dark .mce-btn {
+  background: #374151 !important;
+  border-color: #4b5563 !important;
+  border-radius: 0.25rem !important;
+  margin: 2px !important;
+}
+
+.guest-post-form-dark .mce-btn:hover,
+.guest-post-form-dark .mce-btn:focus {
+  background: #4b5563 !important;
+  border-color: #6b7280 !important;
+  box-shadow: 0 0 0 1px rgba(139, 92, 246, 0.5) !important;
+}
+
+.guest-post-form-dark .mce-btn button {
+  color: #f9f9f9 !important;
+  padding: 4px 8px !important;
+}
+
+.guest-post-form-dark .mce-btn i.mce-ico {
+  color: #f9f9f9 !important;
+}
+
+.guest-post-form-dark .mce-toolbar .mce-btn-group .mce-btn.mce-active {
+  background: #6366f1 !important;
+  border-color: #818cf8 !important;
+}
+
+.guest-post-form-dark .mce-toolbar .mce-btn-group .mce-btn.mce-active button {
+  color: #fff !important;
+}
+
+.guest-post-form-dark .mce-toolbar .mce-btn-group .mce-btn.mce-active i.mce-ico {
+  color: #fff !important;
+}
+
+.guest-post-form-dark .mce-path-item {
+  color: #f9f9f9 !important;
+}
+
+/* Editor content area */
+.guest-post-form-dark .mce-edit-area {
+  border: 1px solid #4b5563 !important;
+  border-radius: 0.5rem !important;
+  padding: 4px !important;
+}
+
+.guest-post-form-dark .mce-edit-area iframe {
+  background-color: #1f2937 !important;
+  border-radius: 0.5rem !important;
+}
+
+/* Fix for the editor content */
+.guest-post-form-dark .mce-content-body {
+  background-color: #1f2937 !important;
+  color: #f9f9f9 !important;
+  padding: 10px !important;
+}
+
+/* Fix for the statusbar */
+.guest-post-form-dark .mce-statusbar {
+  background-color: #374151 !important;
+  border-color: #4b5563 !important;
+  border-radius: 0 0 0.5rem 0.5rem !important;
+}
+
+/* Fix for the menubar */
+.guest-post-form-dark .mce-menubar {
+  background-color: #374151 !important;
+  border-color: #4b5563 !important;
+  border-radius: 0.5rem 0.5rem 0 0 !important;
+}
+
+/* Fix for the toolbar */
+.guest-post-form-dark .mce-toolbar-grp {
+  background-color: #374151 !important;
+  border-color: #4b5563 !important;
+  border-radius: 0.5rem !important;
+  margin-bottom: 4px !important;
+}
