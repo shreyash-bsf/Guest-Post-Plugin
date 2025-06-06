@@ -205,7 +205,12 @@ const GuestPostForm = ({ ajaxUrl, nonce, labels, options }) => {
   
   return (
     <div className={isDarkMode ? "force-ui-dark" : "force-ui-light"}>
-      <form onSubmit={handleSubmit} className={`guest-post-form ${isDarkMode ? 'guest-post-form-dark' : ''}`}>
+      <form
+        onSubmit={handleSubmit}
+        className={`guest-post-form ${isDarkMode ? 'guest-post-form-dark' : ''}`}
+        role="form"
+        aria-label="Guest post submission form"
+      >
         <div className="mb-5">
           <label htmlFor="title" className="block mb-1 font-bold">
             {labels.title} <span className="text-red-600" aria-hidden="true">*</span>
@@ -309,6 +314,7 @@ const GuestPostForm = ({ ajaxUrl, nonce, labels, options }) => {
             onChange={handleFileChange}
             accept="image/*"
             aria-describedby="featured-image-desc"
+            aria-label="Upload featured image"
             size="md"
           />
           <p id="featured-image-desc" className="text-sm mt-1">
@@ -328,6 +334,7 @@ const GuestPostForm = ({ ajaxUrl, nonce, labels, options }) => {
           variant={isDarkMode ? "secondary" : "primary"}
           size="md"
           className="submit-button"
+          aria-label="Submit guest post"
         >
           {isSubmitting ? labels.submitting : labels.submit}
         </Button>
