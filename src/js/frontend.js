@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Fallback to traditional form if React fails
       formContainer.innerHTML = `
         <div class="max-w-3xl mx-auto p-5 bg-gray-50 rounded-lg shadow-md w-full">
-          <form id="guest-post-form" method="post" enctype="multipart/form-data">
+          <form id="guest-post-form" method="post" enctype="multipart/form-data" role="form" aria-label="Guest post submission form">
             <div class="mb-5">
               <label for="post-title" class="block mb-1 font-bold">${labels.title} <span class="text-red-600" aria-hidden="true">*</span></label>
               <input type="text" id="post-title" name="post-title" required aria-required="true" placeholder="Enter your post title" class="w-full p-2.5 border border-gray-300 rounded-md min-h-[40px]">
@@ -79,14 +79,14 @@ document.addEventListener('DOMContentLoaded', function() {
             
             <div class="mb-5">
               <label for="featured-image" class="block mb-1 font-bold">${labels.featuredImage}</label>
-              <input type="file" id="featured-image" name="featured-image" accept="image/*" class="w-full py-2.5">
+              <input type="file" id="featured-image" name="featured-image" accept="image/*" aria-label="Upload featured image" class="w-full py-2.5">
               <p class="text-sm text-gray-600 mt-1">${labels.imageDescription}</p>
             </div>
             
             <input type="hidden" name="action" value="submit_guest_post">
             <input type="hidden" name="guest_post_nonce" value="${nonce}">
             
-            <button type="submit" class="bg-blue-600 text-white border-0 py-3 px-5 text-base rounded cursor-pointer transition-colors hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 w-full md:max-w-[200px]">${labels.submit}</button>
+            <button type="submit" aria-label="Submit guest post" class="bg-blue-600 text-white border-0 py-3 px-5 text-base rounded cursor-pointer transition-colors hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 w-full md:max-w-[200px]">${labels.submit}</button>
           </form>
           <div id="form-response" role="status" aria-live="polite" class="mt-5 p-2.5 rounded w-full"></div>
         </div>
